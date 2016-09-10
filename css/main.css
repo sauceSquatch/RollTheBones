@@ -1,0 +1,171 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.icon {
+  position: absolute;
+  opacity: 0;
+  width: 75px;
+  height: 75px;
+  background-color: #c3d1db; }
+
+body {
+  background-color: #ececec;
+  font-size: 1.4em; }
+  body section {
+    padding: 5rem 20px 5rem;
+    text-align: center;
+    font-family: "Open Sans", sans-serif; }
+    @media (min-width: 550px) {
+      body section {
+        padding: 10rem 0 10rem; } }
+  body header {
+    background-color: #1e1e1e;
+    text-align: center; }
+    @media (min-width: 550px) {
+      body header {
+        text-align: left; } }
+    body header .logo {
+      width: 250px;
+      padding: 20px 10px 20px 10px; }
+      @media (min-width: 550px) {
+        body header .logo {
+          width: 350px;
+          padding: 20px 20px 20px 60px; } }
+  body nav, body .main-nav {
+    background-color: #2d2d30;
+    padding: 10px 0px 0px 0px;
+    text-align: center; }
+    @media (min-width: 550px) {
+      body nav, body .main-nav {
+        padding: 10px 20px 0px 60px;
+        text-align: left; } }
+    body nav .nav-btn, body nav .nav-btn:visited, body .main-nav .nav-btn, body .main-nav .nav-btn:visited {
+      color: #f3f3f3;
+      padding: 0 20px; }
+      @media (min-width: 550px) {
+        body nav .nav-btn, body nav .nav-btn:visited, body .main-nav .nav-btn, body .main-nav .nav-btn:visited {
+          padding: 0 30px; } }
+      body nav .nav-btn:hover, body nav .nav-btn:visited:hover, body .main-nav .nav-btn:hover, body .main-nav .nav-btn:visited:hover {
+        color: #2d2d30;
+        background-color: rgba(255, 255, 255, 0.85); }
+  body h1, body h2 {
+    font-family: "Bangers", cursive;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 68px;
+    line-height: 60px;
+    letter-spacing: 0.5px; }
+  body .btn-big {
+    padding: 20px 30px 20px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f3f3f3;
+    font-size: 30px;
+    letter-spacing: -1px; }
+    body .btn-big:hover {
+      color: #2d2d30;
+      background-color: rgba(255, 255, 255, 0.85); }
+  body .container {
+    width: 100%; }
+    @media (min-width: 550px) {
+      body .container {
+        width: 90%; } }
+  body #gallery {
+    background-image: url("../images/FPO_gallery.jpg");
+    background-size: cover; }
+    body #gallery h1 {
+      color: #f3f3f3;
+      margin: 0 0 0px 0; }
+    body #gallery h2 {
+      color: #f3f3f3;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-size: 24px;
+      margin: 0 0 50px 0; }
+  body #about {
+    background-image: url("../images/about_bgPattern.jpg"); }
+    body #about h3, body #about h4 {
+      font-family: "Bangers", cursive;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+      margin: 20px 0 5px 0; }
+    body #about .row {
+      margin-bottom: 30px; }
+  body #routes .phone {
+    max-width: 480px; }
+    @media (min-width: 550px) {
+      body #routes .phone {
+        max-width: 800px;
+        right: 30px;
+        top: 60px; } }
+  body #sponsors {
+    background-color: #393939; }
+    body #sponsors h2 {
+      color: #f3f3f3; }
+    body #sponsors .sponsor {
+      width: 25%;
+      padding: 10px; }
+      @media (min-width: 550px) {
+        body #sponsors .sponsor {
+          width: 22%; } }
+  body footer {
+    padding: 30px;
+    background-color: #2d2d30; }
+    body footer h1, body footer h2, body footer h4 {
+      font-family: "Bangers", cursive;
+      color: #f3f3f3;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+      font-size: 32px;
+      line-height: 28px;
+      letter-spacing: 0.5px; }
+    body footer a {
+      color: #f3f3f3;
+      text-decoration: none; }
+      body footer a:hover {
+        color: #FFFFFF; }
+      body footer a:visited {
+        color: #f3f3f3;
+        text-decoration: none; }
