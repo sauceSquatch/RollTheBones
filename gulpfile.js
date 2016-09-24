@@ -16,6 +16,7 @@ var sassSources = [
 ]
 
 var jsSources = [
+  'components/lib/PhotoSwipe/*.js',
   'components/lib/*.js',
   'components/lib/greensock/TweenLite.js',
   'components/lib/greensock/easing/EasePack.js',

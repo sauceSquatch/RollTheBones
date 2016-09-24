@@ -47,7 +47,12 @@ body {
   }
 
   nav, .main-nav {
+    background: url('../images/nav_bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
     background-color: $primary_black;
+
+
     padding: 10px 0px 0px 0px;
     text-align: center;
     @media (min-width: $break_sml) {
@@ -57,9 +62,15 @@ body {
     .nav-btn, .nav-btn:visited {
       color: $primary_light;
       padding: 0 20px;
+      border: 1px solid #222;
+      background-color: #333;
+      border-radius: 0;
+      letter-spacing: 0px;
+      // font-size: 18px;
 
       @media (min-width: $break_sml) {
         padding: 0 30px;
+        font-size: 16px;
       }
 
       &:hover {
@@ -77,12 +88,23 @@ body {
     letter-spacing: 0.5px;
   }
 
+  .inline-link {
+    color: $link_color;
+    text-decoration: none;
+  }
+
   .btn-big {
     padding:20px 30px 20px 30px;
     background-color:rgba(0, 0, 0, 0.5);
     color: $primary_light;
     font-size:30px;
     letter-spacing:-1px;
+    text-decoration: none;
+    border-radius: 3px;
+    &:focus {
+      background-color:rgba(0, 0, 0, 0.5);
+      color: $primary_light;
+    }
     &:hover {
       color: $primary_black;
       background-color:rgba(255, 255, 255, 0.85);
@@ -96,8 +118,8 @@ body {
     }
   }
 
-  #gallery {
-    background-image: url('../images/FPO_gallery.jpg');
+  #register {
+    background-image: url('../images/register_bg.jpg');
     background-size: cover;
 
     h1 {
@@ -105,9 +127,10 @@ body {
       margin: 0 0 0px 0;
     }
     h2 {
-      color: $primary_light;
-      font-family: $bodyFontCondensed;
-      font-size: 24px;
+      color: $link_color;
+      // font-family: $bodyFontCondensed;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+      font-size: 32px;
       margin: 0 0 50px 0;
     }
 
@@ -120,7 +143,7 @@ body {
     h3, h4 {
       font-family: $headerFont;
       text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-      font-size: 18px;
+      font-size: 24px;
       line-height: 28px;
       letter-spacing: 0.5px;
       margin: 20px 0 5px 0;
@@ -142,9 +165,19 @@ body {
   }
 
   #sponsors {
+    color: #FFF;
     background-color: $primary_gray;
     h2 {
       color: $primary_light;
+    }
+
+    .sponsor-list {
+      padding-bottom: 30px;
+    }
+
+    h4 {
+      color: $primary_light;
+      font-size: 20px
     }
 
     .sponsor {
@@ -155,11 +188,22 @@ body {
       }
     }
 
+    .disclaimer {
+      color: #999;
+      margin-top: 20px;
+    }
+
   }
 
   footer {
-    padding: 30px;
+    padding: 60px;
     background-color: $primary_black;
+    text-align: center;
+
+    @media (min-width: $break_sml) {
+      text-align: left;
+    }
+
     h1, h2, h4 {
       font-family: $headerFont;
       color: $primary_light;

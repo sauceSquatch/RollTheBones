@@ -1,0 +1,22 @@
+@import "reset";
+@import "mixins";
+@import "vars";
+
+#registration {
+  padding: 0px;
+}
+
+body {
+  nav.main-nav {
+    text-align:left;
+    padding-left: 30px;
+  }
+  section {
+    padding: 0px;
+
+
+    @media (min-width: $break_sml) {
+      padding: 0px;
+    }
+  }
+}
