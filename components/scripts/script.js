@@ -11,8 +11,12 @@ var btn_about = $('.about', 'nav'),
     btn_gallery = $('.gallery', 'nav'),
     btn_routes = $('.routes', 'nav'),
     btn_back = $('.back', 'nav'),   
-    btn_registerMain = $('.primary-register', '#register');
-    gallery = null;
+    btn_registerMain = $('.primary-register', '#register'),
+    gallery = null,
+    inc_buttons = $('.button', 'form'),
+    pricePerRider = 60,
+    pricePerNonRider = 25,
+    btn_payNow = $('#pay-now');
 
 createListeners = function() {
   btn_about.on('click', {
@@ -27,11 +31,49 @@ createListeners = function() {
     section: 'routes'
   }, toSection );
 
+  inc_buttons.on('click', onIncBtnClick);
+  btn_payNow.on('click', onPayNow);
   btn_registerMain.on('click', toRegisterForm);
   btn_back.on('click', backToMain );
   btn_gallery.on('click', openGallery );
 
   //register nav
+
+}
+
+onIncBtnClick = function(evt) {
+    var $button = $(this);
+    var oldValue = $button.parent().find("input").val();
+
+    if ($button.hasClass('plus')) {
+          var newVal = parseFloat(oldValue) + 1;
+        } else {
+       // Don't allow decrementing below zero
+        if (oldValue > 0) {
+          var newVal = parseFloat(oldValue) - 1;
+        } else {
+          newVal = 0;
+        }
+      }
+
+      $button.parent().find("input").val(newVal);
+}
+
+onPayNow = function(evt) {
+    // calculate the values of inputs
+    var numRiders = $('#input-rider', 'form').val(),
+        numNonRiders = $('#input-non-rider', 'form').val(),
+        riderPrice = numRiders * pricePerRider,
+        nonRiderPrice = numNonRiders * pricePerNonRider,
+        totalPrice = riderPrice + nonRiderPrice;
+
+    // console.log('numRiders: ', numRiders);
+    // console.log('numNonRiders: ', numNonRiders);
+    // console.log('riderPrice: ', riderPrice);
+    // console.log('nonRiderPrice: ', nonRiderPrice);
+    // console.log('totalPrice: ', totalPrice);
+
+    window.open("https://www.paypal.me/ghostrider1964/" + totalPrice);
 
 }
 

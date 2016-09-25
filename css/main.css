@@ -109,20 +109,33 @@ body {
   body .inline-link {
     color: #2cb9dc;
     text-decoration: none; }
-  body .btn-big {
+  body .btn-big, body input[type="submit"] {
     padding: 20px 30px 20px 30px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #f3f3f3;
+    font-family: "Bangers", cursive;
     font-size: 30px;
-    letter-spacing: -1px;
+    letter-spacing: 1px;
     text-decoration: none;
-    border-radius: 3px; }
-    body .btn-big:focus {
+    border-radius: 6px;
+    border: 2px solid #2d2d30; }
+    body .btn-big:focus, body input[type="submit"]:focus {
       background-color: rgba(0, 0, 0, 0.5);
       color: #f3f3f3; }
-    body .btn-big:hover {
+    body .btn-big:hover, body input[type="submit"]:hover {
       color: #2d2d30;
       background-color: rgba(255, 255, 255, 0.85); }
+  body .inverted {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #2d2d30;
+    border: 2px solid #f3f3f3;
+    margin: 20px 0 0 0; }
+    body .inverted:focus {
+      background-color: rgba(255, 255, 255, 0.75);
+      color: #2d2d30; }
+    body .inverted:hover {
+      color: #f3f3f3;
+      background-color: rgba(0, 0, 0, 0.85); }
   body .container {
     width: 100%; }
     @media (min-width: 550px) {
@@ -150,6 +163,57 @@ body {
       margin: 20px 0 5px 0; }
     body #about .row {
       margin-bottom: 30px; }
+  body #admission {
+    background-image: url("../images/promo_bg_admission.jpg");
+    color: #f3f3f3; }
+    body #admission h3, body #admission h4 {
+      font-family: "Bangers", cursive;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+      margin: 20px 0 5px 0; }
+    body #admission h4 {
+      font-size: 16px;
+      color: #b6b5b5; }
+    body #admission form {
+      width: 400px;
+      margin: 40px auto;
+      margin-top: 20px; }
+    body #admission label {
+      display: block;
+      float: left;
+      text-align: right;
+      padding: 5px 10px 0 0;
+      width: 200px;
+      font-family: "Bangers", cursive;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.5px; }
+    body #admission input[type=text] {
+      float: left;
+      width: 40px;
+      font: bold 20px Helvetica, sans-serif;
+      padding: 3px 0 0 0;
+      text-align: center;
+      color: #2d2d30; }
+    body #admission form div {
+      overflow: hidden;
+      margin: 0 0 5px 0; }
+      body #admission form div .button {
+        margin: 0 0 0 5px;
+        cursor: pointer;
+        width: 44px;
+        height: 40px;
+        float: left;
+        text-align: center;
+        padding: 10px; }
+      body #admission form div .inc_icon {
+        height: 20px;
+        width: 20px; }
+      body #admission form div .buttons {
+        padding: 20px 0 0 140px; }
   body #routes .phone {
     max-width: 480px; }
     @media (min-width: 550px) {
