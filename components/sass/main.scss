@@ -164,6 +164,17 @@ body {
       line-height: 28px;
       letter-spacing: 0.5px;
       margin: 20px 0 5px 0;
+      a {
+        color: $primary_black;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+        &:visited, &:active {
+          color: $primary_black;
+          text-decoration: none;
+        }
+      }
     }
     .row {
       margin-bottom: 30px;
@@ -187,8 +198,8 @@ body {
     }
     form {
       width: 400px;
-      margin: 40px auto;
-      margin-top: 20px;
+      margin: 0px auto;
+      margin-bottom: 30px;
     }
     label {
       display: block;
@@ -243,6 +254,11 @@ body {
         top:60px;
       }
     }
+    #routesTXstate_img {
+      width: 65px;
+      margin: 20px;
+      // opacity: 0.75;
+    }
   }
 
   #sponsors {
@@ -250,6 +266,7 @@ body {
     background-color: $primary_gray;
     h2 {
       color: $primary_light;
+      padding-bottom: 30px;
     }
 
     .sponsor-list {
@@ -262,10 +279,11 @@ body {
     }
 
     .sponsor {
-      width: 25%;
-      padding: 10px;
+      width: 32%;
+      padding: 5px;
       @media (min-width: $break_sml) {
-        width: 22%;
+        width: 32%;
+        padding: 10px;
       }
     }
 

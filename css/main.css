@@ -161,6 +161,14 @@ body {
       line-height: 28px;
       letter-spacing: 0.5px;
       margin: 20px 0 5px 0; }
+      body #about h3 a, body #about h4 a {
+        color: #2d2d30;
+        text-decoration: none; }
+        body #about h3 a:hover, body #about h4 a:hover {
+          text-decoration: underline; }
+        body #about h3 a:visited, body #about h3 a:active, body #about h4 a:visited, body #about h4 a:active {
+          color: #2d2d30;
+          text-decoration: none; }
     body #about .row {
       margin-bottom: 30px; }
   body #admission {
@@ -178,8 +186,8 @@ body {
       color: #b6b5b5; }
     body #admission form {
       width: 400px;
-      margin: 40px auto;
-      margin-top: 20px; }
+      margin: 0px auto;
+      margin-bottom: 30px; }
     body #admission label {
       display: block;
       float: left;
@@ -221,22 +229,27 @@ body {
         max-width: 800px;
         right: 30px;
         top: 60px; } }
+  body #routes #routesTXstate_img {
+    width: 65px;
+    margin: 20px; }
   body #sponsors {
     color: #FFF;
     background-color: #393939; }
     body #sponsors h2 {
-      color: #f3f3f3; }
+      color: #f3f3f3;
+      padding-bottom: 30px; }
     body #sponsors .sponsor-list {
       padding-bottom: 30px; }
     body #sponsors h4 {
       color: #f3f3f3;
       font-size: 20px; }
     body #sponsors .sponsor {
-      width: 25%;
-      padding: 10px; }
+      width: 32%;
+      padding: 5px; }
       @media (min-width: 550px) {
         body #sponsors .sponsor {
-          width: 22%; } }
+          width: 32%;
+          padding: 10px; } }
     body #sponsors .disclaimer {
       color: #999;
       margin-top: 20px; }
