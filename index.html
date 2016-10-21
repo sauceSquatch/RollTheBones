@@ -64,21 +64,53 @@
     <div class="container">
       <h2>Admission</h2>
         <div class="row">
-          <h4>Early registration pricing is Through Sept. 30.</h4>
-           <form method="post" action="">
+           <form method="post" action="" id="form-admission">
                <div>
-                   <label for="name">$60 for rider</label>
+                   <label for="name">$75 for rider</label>
                    <input type="text" name="input-rider" id="input-rider" value="1">
                    <div class="plus button"><img src="images/icon_plus_white.svg" class="inc_icon" alt=""></div><div class="minus button"><img src="images/icon_minus_white.svg" class="inc_icon" alt=""></div>
                </div>
                <div>
-                   <label for="name">$25 for non-rider</label>
+                   <label for="name">$35 for non-rider</label>
                    <input type="text" name="input-non-rider" id="input-non-rider" value="0">
                    <div class="plus button"><img src="images/icon_plus_white.svg" class="inc_icon" alt=""></div><div class="minus button"><img src="images/icon_minus_white.svg" class="inc_icon" alt=""></div>
                </div>
            </form>
            <a class="primary-button btn-big primary-register inverted" id="pay-now">PAY NOW</a>
         </div>
+      </div>
+    </div>
+  </section>
+  <section id="tshirts">
+    <div class="container">
+    <h2>T-Shirts</h2>
+      <div class="row">
+        <img class="shirt" src="images/shirt_black.png" alt="">
+      </div>
+      <div class="row" id="tshirt-form-container">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="ghostrider1964@yahoo.com">
+        <input type="hidden" name="lc" value="AU">
+        <input type="hidden" name="item_name" value="Roll The Bones Rally T-Shirt (black)">
+        <input type="hidden" name="amount" value="16.00">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="services">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="SIZES"></td></tr><tr><td><h3>$16</h3><select name="os0">
+          <option value="SMALL">SMALL </option>
+          <option value="MEDIUM">MEDIUM </option>
+          <option value="LARGE">LARGE </option>
+          <option value="XL">XL </option>
+          <option value="XXL">XXL </option>
+          <option value="3XL">3XL </option>
+        </select> </td></tr>
+        </table>
+        <button class="primary-button btn-big primary-register" name="submit">Buy Now</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+        </form>
       </div>
     </div>
   </section>

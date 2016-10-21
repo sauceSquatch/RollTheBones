@@ -14,8 +14,8 @@ var btn_about = $('.about', 'nav'),
     btn_registerMain = $('.primary-register', '#register'),
     gallery = null,
     inc_buttons = $('.button', 'form'),
-    pricePerRider = 60,
-    pricePerNonRider = 25,
+    pricePerRider = 75,
+    pricePerNonRider = 35,
     btn_payNow = $('#pay-now');
 
 createListeners = function() {
